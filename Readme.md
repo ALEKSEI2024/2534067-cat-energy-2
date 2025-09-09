@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Алексей Громов](https://up.htmlacademy.ru/adaptive-individual/2/user/2534067).
-* Наставник: `Хороший человек` (https://up.htmlacademy.ru/).
+* Наставник: `Владислав Доровлев` (https://up.htmlacademy.ru/).
 
 ---
 
