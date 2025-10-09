@@ -6,7 +6,12 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicons/" type="image/svg+xml">
   <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -14,8 +19,16 @@
     <nav class="header__navigation navigation">
       <div class="navigation-wrapper">
         <a class="navigation__logo logo" href="catalog.html">
-          <icon src="#" alt="картинка логотипа">
-            <img class="logo__text" src="#" alt="Текст логотипа">
+          <picture>
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/index/svg/logo-decstop.svg">
+            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/index/svg/logo-tablet.svg">
+            <img src="images/index/svg/logo-mobile.svg" width="33" height="38" alt="картинка логотипа">
+          </picture>
+          <picture>
+            <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/index/svg/logo-2-desktop.svg">
+            <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/index/svg/logo-2-tablet.svg">
+            <img class="logo__text" src="images/index/svg/logo-2-mobile.svg" width="101" height="18" alt="Текст логотипа">
+          </picture>
         </a>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -48,7 +61,11 @@
         <p class="hero__slogan">
           ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!
         </p>
-        <img class="hero__image" src="#" alt="изображение продукта">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index/index-can-desktop@1x.png 1x, image/index/index-can-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index/index-can-tablet@1x.png 1x, image/index/index-can-tablet@2x.png 2x">
+          <img class="hero__image" src="images/index/index-can-mobile@1x.png" srcset="images/index/index-can-mobile@2x.png 2x" width="280" height="270" alt="изображение продукта">
+        </picture>
         <a class="hero__button button" href="#">
           Подобрать программу
         </a>
@@ -151,7 +168,14 @@
           Затраты на питание: 15 000 РУБ.
         </p>
         <div class="slider">
-          <img class="slider__image" src="#" alt="демонстрация рузультата">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/cat-bold@1x.png 1x, images/index/cat-bold@2x.png 2x">
+            <img class="slider__image" src="images/index/cat-bold-mobile@1x.png" srcset="images/index/cat-bold-mobile@2x.png 2x" width="280" height="256" alt="демонстрация рузультата(толстый кот)">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/cat-slim@1x.png 1x, images/index/cat-slim@2x.png 2x">
+            <img class="slider__image" src="images/index/cat-slim-mobile@1x.png" srcset="images/index/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="демонстрация рузультата (худой кот)">
+          </picture>
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
@@ -164,7 +188,11 @@
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="#" alt="наше местопожение">
+      <picture>
+        <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/index/lacation-desktop@1x.jpg 1x, images/index/lacation-desktop@2x.jpg 2x ">
+        <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/index/lacation-tablet@1x.jpg 1x, images/index/lacation-tablet@2x.jpg 2x">
+        <img src="images/index/lacation-desktop@1x.jpg" srcset="images/index/lacation-mobile@2x.jpg 2x" width="320" height="362" alt="наше местопожение">
+      </picture>
       <div class="map__contact contact">
         <h4 class="contact__title">
           приглашаем
@@ -185,7 +213,7 @@
   <footer class="main-footer footer">
     <div class="footer-wrapper">
       <a class="logo__link logo__link--footer" href="catalog.html">
-        <img class="logo__text" src="#" alt="Текст логотипа">
+        <img class="logo__text" src="images/index/svg/logo-2-mobile.svg" width="128" height="24" alt="Текст логотипа">
       </a>
 
       <ul class="social">
@@ -207,7 +235,7 @@
       </ul>
       <a class="main-footer__copyright" href="#">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__image" src="#" alt="логотип аккадемии">
+        <img class="copyright__image" src="images/index/svg/html-academy-icon.svg" width="27" height="34" alt="логотип аккадемии">
       </a>
     </div>
   </footer>
