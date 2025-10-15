@@ -1,9 +1,26 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+
 
 /* BLOCKS */
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
-$bg:tomato;
-
+@import "./blocks/navigation.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/manual.scss";
+@import "./blocks/experience.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/map.scss";
+@import "./blocks/map__contact.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-footer__copyright.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/catalog-secondary.scss";
+@import "./blocks/catalog-product.scss";
+@import "./blocks/catalog-secondary__stock.scss";
+@import "./blocks/subscription.scss";
